@@ -1,0 +1,42 @@
+body{
+    background-color: beige;
+    color: #012622;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container h1{
+    background-color: #012622;
+    color: beige;
+    width: 100%;
+    text-align: center;
+}
+
+#nametable{
+    border: 1px #ccc solid;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#nametable td, #nametable th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#nametable tr:nth-child(even){background-color: #f2f2f2;}
+
+#nametable tr:hover {background-color: #ddd;}
+
+#nametable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #012622;
+  color: beige;
+}
