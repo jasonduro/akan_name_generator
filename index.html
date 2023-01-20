@@ -11,16 +11,21 @@
 </head>
 
 <body>
+    <h1>Akan Name Generator</h1>
     <div class="container">
-        <h1>Akan Name Generator</h1>
-        <h3>About the Akan</h3>
-        <p>Click <a href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">here</a> to learn more about the
-            Akan</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/XT_hUkQfcmw"></iframe>
+        <div class="aboutblock">
+            <h3>About the Akan</h3>
+            <p>Click <a href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">here</a> to learn more about the
+                Akan</p>
+            <iframe width="400" height="225" src="https://www.youtube.com/embed/XT_hUkQfcmw"></iframe>
+        </div>
         <br>
-        <h3>Akan Name Chart</h3>
-        <p>If you know which day of the week you were born on, check out this table below to find out your Akan name:
-        </p>
+        <div class="nameblock">
+            <h3>Akan Name Chart</h3>
+            <p>If you know which day of the week you were born on, check out this table below to find out your Akan
+                name:
+            </p>
+        </div>
         <div id="nametable">
             <table>
                 <thead>
@@ -84,18 +89,33 @@
                 <label>Birthday:</label>
                 <input type="date" name="birthday">
             </div>
-            <br>
-            <input type="submit" name="generate" value="Generate">
         </form>
+            <br>
+            <!--Adding a button for modal-->
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">Generate</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Your Akan name is : </p>
+                </div>
+            </div>
+
         <br>
         <h3>Famous People with Akan Names</h3>
         <p><strong>Kofi Annan</strong>- Former UN Secretary General and recipient of the Nobel Peace Prize</p>
         <br>
-        <img src="images/Kofi_Annan.jpeg" alt="Image of Kofi Annan UN Secretary General" width="400">
-        <blockquote cite="https://www.azquotes.com/author/450-Kofi_Annan">"Knowledge is power. Information is
+        <img src="images/Kofi_Annan.jpeg" alt="Image of Kofi Annan UN Secretary General" class="responsive">
+        <blockquote class="blockquote" cite="https://www.azquotes.com/author/450-Kofi_Annan">"Knowledge is power.
+            Information is
             liberating. Education is the premise of progress, in every society, in every family." - <em>Kofi Annan</em>
         </blockquote>
     </div>
+    <script src="main.js"></script>
 </body>
 
 </html>
