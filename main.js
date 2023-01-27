@@ -32,7 +32,7 @@ window.onclick = function(event) {
 function generateAkanName() {
   let birthDate = document.getElementById("birthday").value
   let gender = document.getElementById("gender").value
-  var dayIndex = new Date(birthDate).getDay
+  let dayIndex = new Date(birthDate).getDay()
 
   //This one evaluates for the day of the week based on the day index
   const getDayName = (dayIndex) =>{
@@ -40,7 +40,27 @@ function generateAkanName() {
     return days[dayIndex];
   }
   const dayName = getDayName(dayIndex)
-  console.log(dayName)
+  
+    //This code block evaluates for the Male Akan Name based on the dayindex above.
+  const getMaleAkanName = (dayIndex)=>{
+    const names = ['Kwasi','Kwadwo','Kwabena','Kwaku','Yaw','Kofi','Kwame']
+    return names[dayIndex];
+  } 
+
+  //This code block evaluates for the Feale Akan Name based on the dayindex above.
+  const getFemaleAkanName = (dayIndex)=>{
+    const names = ['Akosua','Adwoa','Abenaa','Akua','Yaa','Afua','Ama']
+    return names[dayIndex];
+  }
+
+  let akanName 
+  if(gender == "male"){
+    akanName = getMaleAkanName(dayIndex);
+  } else if(gender == "female"){
+    akanName = getFemaleAkanName(dayIndex);
+  }
+
+  console.log(akanName)
 }
 
 
